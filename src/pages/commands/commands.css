@@ -1,0 +1,85 @@
+@import url('../../libcss/styles.config.css');
+
+/* Div con la imagen que será
+resaltada poor el texto */
+#text-container {
+    background-image: url('../../images/anime-room-tools.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Div que contiene el el texto de entrada */
+#text-commands {
+    padding-top: 2em;
+    height: 40vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+/* Dando resalte al texto 'Explorando' */
+#text-commands span {
+    color: var(--default-green);
+}
+
+/* Div que contiene los comandos y sus
+categorías */
+#box-commands {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+/* Aviso */
+#notice-commands {
+    width: 70%;
+    margin: 2em auto;
+    font-size: 18px;
+    text-indent: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#notice-commands span {
+    font-size: 40px;
+    color: var(--bootstrap-bg-info);
+    font-weight: bold;
+}
+
+/* Div para centrar el contenido */
+#centre-commands {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Div con las categorias */
+#categories {
+    background-color: var(--firebase-dark-navy-blue);
+    width: 20%;
+    height: fit-content;
+    padding: 1em 0 2em;
+}
+
+/* Cada una de las categorias */
+.category {
+    padding: 1em 0;
+    width: 60%;
+    margin: .5em auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.category svg {
+    margin-right: 10px;
+}
+
+.category:hover {
+    box-shadow: 0 2px 0 var(--default-shadow-gray);
+}

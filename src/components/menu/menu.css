@@ -1,0 +1,41 @@
+@import url('../../libcss/styles.config.css');
+
+a {
+    color: white;
+}
+
+.menu {
+    width: 45%;
+    position: sticky;
+    z-index: 5;
+    top: 1em;
+    margin-top: -4.70em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 2em;
+    border-radius: 50px;
+    background-color: #263040;
+    box-shadow: 0px 6px 6px #1d2430;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu-icon {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.menu-right a {
+    padding: 4px 0;
+    transition: box-shadow .2s;
+}
+
+.menu-right a:not(:last-child) {
+    margin-right: 1.4em;
+}
+
+.menu-right a:hover {
+    box-shadow: 0 1px 0 white;
+}
