@@ -1,0 +1,20 @@
+@import url('../../libcss/styles.config.css');
+
+
+/* Cada una de las categorias */
+.category {
+    padding: 1em 0;
+    width: 60%;
+    margin: .5em auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.category svg {
+    margin-right: 10px;
+}
+
+.category:hover {
+    box-shadow: 0 2px 0 var(--default-shadow-gray);
+}

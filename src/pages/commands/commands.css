@@ -11,7 +11,7 @@ resaltada poor el texto */
 
 /* Div que contiene el el texto de entrada */
 #text-commands {
-    padding-top: 2em;
+    padding-top: 1em;
     height: 40vh;
     font-weight: bold;
     letter-spacing: 2px;
@@ -56,6 +56,8 @@ categorías */
 #centre-commands {
     width: 70%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Div con las categorias */
@@ -66,20 +68,7 @@ categorías */
     padding: 1em 0 2em;
 }
 
-/* Cada una de las categorias */
-.category {
-    padding: 1em 0;
-    width: 60%;
-    margin: .5em auto;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.category svg {
-    margin-right: 10px;
-}
-
-.category:hover {
-    box-shadow: 0 2px 0 var(--default-shadow-gray);
+/* Div que contiene los comandos */
+#commands {
+    width: 70%;
 }

@@ -1,0 +1,19 @@
+@import url('../../libcss/styles.config.css');
+
+/* Cada uno de los comandos */
+.command {
+    background-color: var(--firebase-dark-navy-blue);
+    padding: 1em 2em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.command:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+/* Descrpción de cada comando */
+.command-description {
+    color: var(--default-shadow-gray);
+}
