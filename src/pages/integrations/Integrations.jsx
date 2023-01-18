@@ -1,24 +1,24 @@
 import './integrations.css'
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
 
-// Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/effect-cards'
-
-// import required modules
-import { EffectCards } from 'swiper'
+// Necesario para colocar la data del json en un valor
+// que pueda ser usaro en la página
+import { useEffect, useState } from 'react'
 
 import Integration from '../../components/integration/Integration'
+
+//El json con todas las integraciones
+import json from './integrations.json'
+
 
 const Integrations = () => {
     return (
         <div id="main-integrations">
             <div id="container-integrations">
-                <Integration title='Anime' links={['google.com', 'hola.com']} />
-
-                <Integration title='Anime' />
-                <Integration title='Anime' />
+                {
+                    json.map(i => (
+                        <Integration key={i.name} title={i.name} links={i.links} images={i.pictures} />                        
+                    ))
+                }
             </div>
         </div>
     )

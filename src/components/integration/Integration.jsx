@@ -10,18 +10,30 @@ import 'swiper/css/effect-cards'
 
 // import required modules
 import { EffectCards } from 'swiper'
+import { useEffect, useState } from 'react'
 
 const Integration = ({ title, links, images }) => {
-    console.log(links)
+    const [arr, setArr] = useState([])
+
+    useEffect(() => {
+        setArr(links)
+    }, [])
+    
     return (
         <div className="integration">
             <div className="left-integration">
                 <div className="title-integration">
                     <h1>{ title }</h1>
-                </div>
+                </div>  
 
                 <div className="content-integration">
-                    { links }
+                    {
+                        arr.map(link => (
+                            <div key={link} className="link">
+                                <a target='_blank' href={`https://${link}`}>{ link }</a>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
 

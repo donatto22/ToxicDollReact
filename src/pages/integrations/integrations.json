@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Anime",
+        "links": ["waifu.pics", "waifu.im"],
+        "pictures": ["avatar.jpg", "avatar.jpg", "avatar.jpg"]
+    },
+
+    {
+        "name": "Imágenes",
+        "links": ["pexels.com", "unsplash.com"],
+        "pictures": ["avatar.jpg", "avatar.jpg", "avatar.jpg"]
+    }
+]
