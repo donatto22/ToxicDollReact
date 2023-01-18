@@ -1,20 +1,20 @@
 import './commands.css'
-import Command from '../../components/command/Command';
+import Command from '../../components/command/Command'
 
 // Icons
-import GppGoodIcon from '@mui/icons-material/GppGood';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import PersonIcon from '@mui/icons-material/Person';
-import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import TurnedInNotOutlinedIcon from '@mui/icons-material/TurnedInNotOutlined';
-import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
-import BuildCircleOutlinedIcon from '@mui/icons-material/BuildCircleOutlined';
-import CalculateOutlinedIcon from '@mui/icons-material/CalculateOutlined';
-import CelebrationOutlinedIcon from '@mui/icons-material/CelebrationOutlined';
-import BuildOutlinedIcon from '@mui/icons-material/BuildOutlined';
-import CmdCategory from '../../components/cmdcategory/CmdCategory';
+import GppGoodIcon from '@mui/icons-material/GppGood'
+import ConstructionIcon from '@mui/icons-material/Construction'
+import MusicNoteIcon from '@mui/icons-material/MusicNote'
+import PersonIcon from '@mui/icons-material/Person'
+import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline'
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined'
+import TurnedInNotOutlinedIcon from '@mui/icons-material/TurnedInNotOutlined'
+import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined'
+import BuildCircleOutlinedIcon from '@mui/icons-material/BuildCircleOutlined'
+import CalculateOutlinedIcon from '@mui/icons-material/CalculateOutlined'
+import CelebrationOutlinedIcon from '@mui/icons-material/CelebrationOutlined'
+import BuildOutlinedIcon from '@mui/icons-material/BuildOutlined'
+import CmdCategory from '../../components/cmdcategory/CmdCategory'
 
 const Commands = () => {
     return (

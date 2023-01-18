@@ -1,0 +1,13 @@
+@import url('../../libcss/styles.config.css');
+
+/* Div global de todas las integraciones y la línea de tiempo */
+#main-integrations {
+    background-image: linear-gradient(var(--firebase-navy-blue) 60%, var(--firebase-dark-navy-blue));
+    min-height: 100vh;
+}
+
+#container-integrations {
+    width: 80%;
+    margin: 0 auto;
+}
+

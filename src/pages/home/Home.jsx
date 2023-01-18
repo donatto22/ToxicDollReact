@@ -1,13 +1,12 @@
 import './home.css'
 import Typed from 'react-typed'
-import logo from '../../images/avatar.jpg'
 
 const App = () => {
 	return (
 		<div className="main-header">
 			<div id="centre-header">
 				<div id="avatar-bot">
-					<img src={logo} alt="avatar bot" />
+					<img src='./avatar.jpg' alt="avatar bot" />
 				</div>
 
 				<div id="typed-text">

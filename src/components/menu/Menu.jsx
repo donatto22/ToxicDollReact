@@ -1,13 +1,12 @@
 import { NavLink } from 'react-router-dom'
 import './menu.css'
-import logo from '../../images/avatar.jpg'
 
 const Menu = () => {
     return (
         <nav className="menu">
             <div className="menu-left">
                 <NavLink to='/'>
-                    <img id='menu-icon' src={logo} alt="Logo Bot" />
+                    <img id='menu-icon' src='./avatar.jpg' alt="Logo Bot" />
                 </NavLink>
             </div>
 

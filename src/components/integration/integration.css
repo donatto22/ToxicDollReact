@@ -1,0 +1,55 @@
+/* Cada una de las integraciones */
+.integration {
+    width: 100%;
+    /* Respetará que cada div tiene su propio contenido, 
+    las bolitas de línea de tiempo no se sobreponen */
+    position: relative; 
+    padding: 2em;
+    border-left: 1px solid var(--default-shadow-gray);
+    /* border-width: 0 0 0 1px;
+    border-style: solid; */
+    /* border-image: linear-gradient(var(--firebase-navy-blue), white, var(--firebase-navy-blue)) 1; */
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .integration:last-child {
+    padding-bottom: 2em;
+} */
+
+/* Título de cada integración */
+.title-integration h1 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.title-integration h1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1.3em;
+    left: -10px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--default-shadow-gray);
+    border-radius: 50%;
+}
+
+.left-integration {
+    width: 30%;
+}
+
+.right-integration {
+    width: 40%;
+}
+
+/* Div que contiene las imagenes del slider */
+.img-slider {
+    width: 50%;
+    box-shadow: -10px 0 100px red;
+}
+
+/* Deshabilitando la sombra que viene por defecto */
+.swiper-3d .swiper-slide-shadow {
+    background: none !important;
+}
