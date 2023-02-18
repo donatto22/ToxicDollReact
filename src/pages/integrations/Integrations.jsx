@@ -2,7 +2,6 @@ import './integrations.css'
 
 // Necesario para colocar la data del json en un valor
 // que pueda ser usaro en la página
-import { useEffect, useState } from 'react'
 
 import Integration from '../../components/integration/Integration'
 

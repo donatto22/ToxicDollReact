@@ -1,0 +1,46 @@
+/* Div que contiene la parte central para afiliar */
+#container-afiliate {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 6em;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#img-afiliate {
+    width: 40%;
+}
+
+/* Contenedor del texto y el botón */
+#text-afiliate {
+    width: 50%;
+}
+
+#text-header span {
+    font-size: 40px;
+    line-height: 1.6;
+}
+
+#text-button {
+    margin-top: 1.6em;
+}
+
+/* Botóngrande para afiliar */
+#button-afiliate {
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--undraw-red);
+    font-weight: bold;
+    border: 0;
+    font-size: 30px;
+    padding: .3em 1em;
+    transition: transform .2s, box-shadow .2s;
+}
+
+#button-afiliate:hover {
+    transform: translate(-6px, -6px);
+    box-shadow: 12px 12px 0 var(--undraw-handcraft-red);
+}
