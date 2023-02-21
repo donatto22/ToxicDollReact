@@ -44,3 +44,63 @@
     transform: translate(-6px, -6px);
     box-shadow: 12px 12px 0 var(--undraw-handcraft-red);
 }
+
+/* Estilos para los bloques con los requerimientos */
+#requeriments-afiliate > div {
+    position: relative; /* Respetar el orden de los divs */
+}
+
+.central-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 1em auto;
+    padding: 7em 0;
+}
+
+/* Los requerimientos y sus detalles */
+.req-left p {
+    line-height: 2;
+    font-size: 20px;
+    color: var(--shadow-clear);
+    text-align: justify;
+}
+
+.req-right ul li {
+    font-size: 20px;
+    color: var(--shadow-clear);
+    display: flex;
+    align-items: center;
+}
+
+/* Los iconos */
+.req-right ul li svg {
+    margin-right: 12px;
+    color: var(--default-red);
+}
+
+.req-right ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.req-left, .req-right {
+    width: 40%; 
+}
+
+/* El título de cada bloque */
+.req-left h1 {
+    color: var(--default-red);
+}
+
+#benefits:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-dark);
+    position: absolute;
+    z-index: -1; /* Se coloca detrás del texto */
+    transform: rotate(-5deg) scale(1.1, 1);
+    border-radius: 20px;
+}
