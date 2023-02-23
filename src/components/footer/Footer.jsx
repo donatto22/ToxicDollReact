@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom'
 import './footer.css'
+import { useState } from 'react'
+import { createPortal } from 'react-dom'
 
 const Footer = () => {
+    const [dolly, setDolly] = useState(false)
+
     return (
         // Contenedor general
         <div id="footer">
@@ -47,11 +51,30 @@ const Footer = () => {
                             </div>
 
                             <div className="footer-link">
-                                <a href="">Dolly</a>
-                                <a href="">D.Loli</a>
+                                <a onClick={() => setDolly(!dolly)}>Dolly</a>
+                                <a>D.Loli</a>
                             </div>
                         </div>
 
+                        {
+                            dolly &&
+                            createPortal(
+                                <div id="container-bot">
+                                    <div id="bot">
+                                        {/* La foto del bot con sus tags */}
+                                        <div id="bot-left">
+                                            a
+                                        </div>
+
+                                        {/* Descripción dell bot y link de invitación */}
+                                        <div id="bot-right">
+                                            a
+                                        </div>
+                                    </div>
+                                </div>,
+                                document.querySelector('#botPortal')
+                            )
+                        }
                     </div>
                 </div>
             </div>

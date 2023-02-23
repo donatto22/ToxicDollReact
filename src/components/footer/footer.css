@@ -1,5 +1,3 @@
-@import url('../../libcss/styles.config.css');
-
 #footer {
     background-color: var(--firebase-dark-navy-blue);
     display: flex;
@@ -92,4 +90,42 @@ en el footer */
 del footer */
 #centre-footer-bottom {
     justify-content: space-between;
+}
+
+/* Estilos para el portal con el modal del bot */
+#container-bot {
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* La card del bot */
+#bot {
+    min-width: 500px;
+    min-height: 250px;
+    background-color: var(--firebase-navy-blue);
+    box-shadow: 0 0 100px -20px var(--paypal), 0 0 400px var(--paypal-dark);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Contenedor de la foto y tags */
+#bot-left {
+    width: 30%;
+    height: 100%;
+    background-color: red;
+}
+
+/* Contenedor de descripción y link de invitación */
+#bot-right {
+    width: 50%;
+    height: 100%;
+    background-color: red;
 }
