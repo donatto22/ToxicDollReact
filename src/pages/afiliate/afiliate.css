@@ -12,16 +12,20 @@
 #img-afiliate {
     width: 40%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Una pequeña burbuja detrás de la imagen para resaltar */
 #img-afiliate::before {
     content: '';
     background-color: var(--default-blue);
     box-shadow: 0 0 400px 40px var(--paypal-dark);
     position: absolute;
     z-index: -1;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 }
 
