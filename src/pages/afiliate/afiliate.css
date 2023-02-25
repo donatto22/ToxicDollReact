@@ -37,6 +37,29 @@
 #text-header span {
     font-size: 40px;
     line-height: 1.6;
+    margin-right: 4px;
+}
+
+/* icono del corazón */
+#text-header svg {
+    transform: scale(1.4);
+    color: var(--undraw-handcraft-red);
+    animation: grow infinite 1s;
+}
+
+/* Animación para que el corazón empiece a latir */
+@keyframes grow {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.8);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
 }
 
 #text-button {

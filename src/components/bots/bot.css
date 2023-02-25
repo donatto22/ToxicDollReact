@@ -1,0 +1,80 @@
+/* Estilos para el portal con el modal del bot */
+#container-bot {
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* La card del bot */
+#bot {
+    /* min-width: 600px;
+    min-height: 300px; */
+    padding: 0 2em;
+    background-color: var(--firebase-navy-blue);
+    box-shadow: 0 0 100px -20px var(--paypal), 0 0 400px var(--paypal-dark);
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bot > div {
+    margin: 2em 0;
+}
+
+/* Contenedor de la foto y tags */
+#bot-left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#details {
+    text-align: center;
+}
+
+#details > div:not(#tags) {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#tags {
+    display: flex;
+}
+
+.tag {
+    font-size: 16px;
+    background-color: var(--firebase-dark-navy-blue);
+    border-radius: 4px;
+    padding: 6px 10px;
+    user-select: none;
+}
+
+.tag:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* Contenedor de descripción y link de invitación */
+#bot-right {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+#profile-image {
+    width: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+    box-shadow: 0 1.4em 2em -1.2em var(--discord-blue2);
+}

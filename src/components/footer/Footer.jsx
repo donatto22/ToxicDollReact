@@ -2,9 +2,16 @@ import { Link } from 'react-router-dom'
 import './footer.css'
 import { useState } from 'react'
 import { createPortal } from 'react-dom'
+import Dolly from '../bots/Dolly'
+import Dollyloli from '../bots/Dollyloli'
+
+import AssignmentTurnedInOutlinedIcon from '@mui/icons-material/AssignmentTurnedInOutlined'
+import AttachFileOutlinedIcon from '@mui/icons-material/AttachFileOutlined'
+import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined'
 
 const Footer = () => {
     const [dolly, setDolly] = useState(false)
+    const [dollyloli, setDollyloli] = useState(false)
 
     return (
         // Contenedor general
@@ -22,7 +29,7 @@ const Footer = () => {
                     <div id="container-footer-right">
                         <div className="footer-box-links">
                             <div className="title-links">
-                                <span>&#128220; Legal</span>
+                                <span><AssignmentTurnedInOutlinedIcon/> Legal</span>
                             </div>
 
                             <div className="footer-link">
@@ -34,7 +41,7 @@ const Footer = () => {
 
                         <div className="footer-box-links">
                             <div className="title-links">
-                                <span>&#128204; Enlaces</span>
+                                <span><AttachFileOutlinedIcon/> Enlaces</span>
                             </div>
 
                             <div className="footer-link">
@@ -47,34 +54,17 @@ const Footer = () => {
 
                         <div className="footer-box-links">
                             <div className="title-links">
-                                <span>&#128101; Franquicia</span>
+                                <span><GroupsOutlinedIcon/> Franquicia</span>
                             </div>
 
                             <div className="footer-link">
                                 <a onClick={() => setDolly(!dolly)}>Dolly</a>
-                                <a>D.Loli</a>
+                                <a onClick={() => setDollyloli(!dollyloli)}>Dolly Loli</a>
                             </div>
                         </div>
 
-                        {
-                            dolly &&
-                            createPortal(
-                                <div id="container-bot">
-                                    <div id="bot">
-                                        {/* La foto del bot con sus tags */}
-                                        <div id="bot-left">
-                                            a
-                                        </div>
-
-                                        {/* Descripción dell bot y link de invitación */}
-                                        <div id="bot-right">
-                                            a
-                                        </div>
-                                    </div>
-                                </div>,
-                                document.querySelector('#botPortal')
-                            )
-                        }
+                        { dolly && createPortal(<Dolly/>, document.querySelector('#botPortal')) }
+                        { dollyloli && createPortal(<Dollyloli/>, document.querySelector('#botPortal')) }
                     </div>
                 </div>
             </div>

@@ -1,6 +1,8 @@
 import './afiliate.css'
-import { AiFillStar } from 'react-icons/ai'
-import { BsCheckLg } from 'react-icons/bs'
+
+import StarOutlinedIcon from '@mui/icons-material/StarOutlined'
+import CheckIcon from '@mui/icons-material/Check'
+import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined'
 
 const Afiliate = () => {
     return (
@@ -12,7 +14,8 @@ const Afiliate = () => {
 
                 <div id="text-afiliate">
                     <div id="text-header">
-                        <span>Unidos brindamos mejores funciones al mundo</span>
+                        <span>Unidos brindaremos mejores funciones al mundo </span>
+                        <FavoriteOutlinedIcon/>
                     </div>
 
                     <div id="text-button">
@@ -33,11 +36,11 @@ const Afiliate = () => {
 
                         <div className="req-right">
                             <ul>
-                                <li><AiFillStar/> Crecer en número de servidores</li>
-                                <li><AiFillStar/> Descrubrimiento</li>
-                                <li data-type="futuro"><AiFillStar/> Recompensas en juegos de Bots</li>
-                                <li><AiFillStar/> Ayuda de otros creadores de bots</li>
-                                <li><AiFillStar/> Nuevos comandos en mi servidor oficial</li>
+                                <li><StarOutlinedIcon/> Crecer en número de servidores</li>
+                                <li><StarOutlinedIcon/> Descrubrimiento</li>
+                                <li data-type="futuro"><StarOutlinedIcon/> Recompensas en juegos de Bots</li>
+                                <li><StarOutlinedIcon/> Ayuda de otros creadores de bots</li>
+                                <li><StarOutlinedIcon/> Nuevos comandos en mi servidor oficial</li>
                             </ul>
                         </div>
                     </div>
@@ -52,10 +55,10 @@ const Afiliate = () => {
 
                         <div className="req-right">
                             <ul>
-                                <li> <BsCheckLg/> Un comando de afiliación</li>
-                                <li> <BsCheckLg/> Enlace de invitación de tu Bot</li>
-                                <li> <BsCheckLg/> Link de la Página Web</li>
-                                <li> <BsCheckLg/> Link del Servidor de tu Bot</li>
+                                <li> <CheckIcon/> Un comando de afiliación</li>
+                                <li> <CheckIcon/> Enlace de invitación de tu Bot</li>
+                                <li> <CheckIcon/> Link de la Página Web</li>
+                                <li> <CheckIcon/> Link del Servidor de tu Bot</li>
                             </ul>
                         </div>
                     </div>
