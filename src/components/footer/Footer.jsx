@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="centre-footer">
                     <div id="container-footer-left">
                         <h1 className="bot-name">ToxicDoll</h1>
-                        <p className="description-bot">
+                        <p className="description-bot-footer">
                             Soy un bot para ti y tu servidor. Con todas las funcionalidad que necesitas, mientras más mejor.
                         </p>
                     </div>

@@ -20,7 +20,7 @@ const Afiliate = () => {
 
                     <div id="text-button">
                         <button id="button-afiliate">
-                            Unirse 
+                            <a target='_blank' href="https://forms.office.com/r/LPWtjKW3CY">Unirse</a>
                         </button>
                     </div>
                 </div>
