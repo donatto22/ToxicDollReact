@@ -1,6 +1,9 @@
 import './bot.css'
 
-const Dollyloli = () => {
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined'
+import CircleIcon from '@mui/icons-material/Circle'
+
+const Dollyloli = ({ state, exit, inviteLink }) => {
     return (
         <div id="container-bot">
             <div id="bot">
@@ -21,7 +24,20 @@ const Dollyloli = () => {
 
                 {/* Descripción dell bot y link de invitación */}
                 <div id="bot-right">
-                    a
+                    {/* Botón para cerrar */}
+                    <div id='exit' onClick={exit}><CloseOutlinedIcon/></div>
+                
+                    <div id="state">
+                        <div data-state={state}><CircleIcon/> { state }</div>
+                    </div>
+
+                    <div id="description-bot">
+                        <span>Muestro contenido para mayores de edad en los canales permitidos.</span>
+                    </div>
+
+                    <div id="button-invite">
+                        <a href={inviteLink}>Agregar al Servidor</a>
+                    </div>
                 </div>
             </div>
         </div>

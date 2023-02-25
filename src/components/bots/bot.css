@@ -20,6 +20,7 @@
     box-shadow: 0 0 100px -20px var(--paypal), 0 0 400px var(--paypal-dark);
     border-radius: 10px;
     z-index: 2;
+    max-width: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -39,7 +40,9 @@
 }
 
 #details {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #details > div:not(#tags) {
@@ -67,8 +70,70 @@
 /* Contenedor de descripción y link de invitación */
 #bot-right {
     width: 50%;
-    height: 100%;
-    background-color: red;
+    height: 230px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Descripción del bot */
+#description-bot {
+    width: 100%;
+    line-height: 2;
+    color: #c9c9c9;
+}
+
+/* Estado del bot */
+#state > div{
+    display: flex;
+    align-items: center;
+}
+
+#state > div svg {
+    margin-right: 6px;
+}
+
+/* Bot apagado */
+[data-state='Apagado'] {
+    color: var(--default-shadow-gray);
+}
+
+[data-state='Apagado'] svg {
+    color: gray;
+}
+
+/* Bot en línea */
+[data-state='Activo'] {
+    color: var(--undraw-green);
+}
+
+/* Botón para agregar al servidor */
+#button-invite a {
+    display: block;
+    user-select: none;
+    cursor: pointer;
+    width: 100%;
+    outline: 1px solid var(--discord-blue);
+    padding: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#button-invite a:hover {
+    background-color: var(--discord-blue);
+}
+
+#button-invite a:active {
+    background-color: var(--paypal);
+}
+
+#exit {
+    transform: scale(1.6);
+    cursor: pointer;
+    position: absolute;
+    right: 33%;
+    top: 30%;
 }
 
 #profile-image {

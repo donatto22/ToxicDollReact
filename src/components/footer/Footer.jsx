@@ -63,8 +63,8 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        { dolly && createPortal(<Dolly/>, document.querySelector('#botPortal')) }
-                        { dollyloli && createPortal(<Dollyloli/>, document.querySelector('#botPortal')) }
+                        { dolly && createPortal(<Dolly state={'Apagado'} exit={() => setDolly(!dolly)}/>, document.querySelector('#botPortal')) }
+                        { dollyloli && createPortal(<Dollyloli state={'Apagado'} exit={() => setDollyloli(!dollyloli)}/>, document.querySelector('#botPortal')) }
                     </div>
                 </div>
             </div>
