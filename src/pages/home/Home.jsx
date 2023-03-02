@@ -1,6 +1,7 @@
 import './home.css'
 import Typed from 'react-typed'
 import { BasicOperations } from 'ax-calculator'
+import Calculator from './calculator/Calculator'
 
 const App = () => {
 	const a = BasicOperations.sum(0.3, 0.2).result
@@ -32,19 +33,7 @@ const App = () => {
 
 			<div id="main">
 				<div id="centre-main">
-					<div id="calculator">
-						<div id="calculator-flex">
-							<div id="calculator-left">
-								<h1>Tu Bot con calculadora!</h1>
-								<p>Puedes usar la misma calculadora que uso en mis comandos de Matemáticas <a id="calculator-link" href="https://github.com/donatto22/ax-calculator">desde este enlace</a>.</p>
-							</div>
-
-							<div id="calculator-right">
-								<img src="./mathbg.jpg" alt="" />
-								<img src="./logo.png" alt="" />
-							</div>
-						</div>
-					</div>
+					<Calculator/>
 				</div>
 			</div>
 		</>
