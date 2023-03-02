@@ -107,3 +107,15 @@ https://codepen.io/nxworld/pen/OyRrGy */
         opacity: 0;
     }
 }
+
+#main {
+    width: 100%;
+    font-size: 18px;
+}
+
+/* Centrando el contendor */
+#centre-main {
+    padding: 4em 0;
+    width: 70%;
+    margin: 0 auto;
+}

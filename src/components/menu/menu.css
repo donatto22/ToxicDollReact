@@ -37,3 +37,10 @@ a {
 .menu-right a:hover {
     box-shadow: 0 1px 0 white;
 }
+
+/* Tablet */
+@media (max-width: 768px) {
+    .menu {
+        width: 80%;
+    }
+}

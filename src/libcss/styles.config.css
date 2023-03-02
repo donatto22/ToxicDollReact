@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /* Normalize */
-@import url("../libcss/normalize.css");
+@import url("./normalize.css");
 
 :root {
     --red-dark: #ea2c1a;
