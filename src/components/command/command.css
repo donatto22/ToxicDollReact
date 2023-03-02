@@ -1,5 +1,3 @@
-@import url('../../libcss/styles.config.css');
-
 /* Cada uno de los comandos */
 .command {
     background-color: var(--firebase-dark-navy-blue);
@@ -16,4 +14,91 @@
 /* Descrpción de cada comando */
 .command-description {
     color: var(--default-shadow-gray);
+}
+
+#main {
+    width: 100%;
+    font-size: 18px;
+}
+
+/* Centrando el contendor */
+#centre-main {
+    padding: 4em 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Estilos al div de anuncio de la calculadora */
+#calculator {
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid var(--paypal-dark);
+    border-radius: 10px;
+    box-shadow: 0 40px 80px #1d2430;
+    overflow: hidden;
+}
+
+#calculator-flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Pequeño aviso */
+#calculator::before {
+    content: 'Para creadores de Bots';
+    position: absolute;
+    background-color: var(--paypal);
+    box-shadow: 0 10px 40px var(--paypal-dark);
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 1.4em 2em;
+    width: 20%;
+    transform: translate(-3em, -50%);
+}
+
+/* Contenido del anuncio calculadora */
+#calculator-left {
+    width: 40%;
+    box-shadow: 10px 0 0 black;
+    padding: 0 2em;
+}
+
+#calculator-left p {
+    line-height: 1.6;
+    color: var(--default-white);
+}
+
+#calculator-link {
+    color: var(--discord-blue2);
+}
+
+/* Fondo calculadora */
+#calculator-right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#calculator-right::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1;
+}
+
+#calculator-right img:first-child {
+    height: 100%;
+}
+
+#calculator-right img:last-child {
+    width: 200px;
+    position: absolute;
+    z-index: 2;
 }
