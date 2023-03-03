@@ -101,3 +101,22 @@ del footer */
 #centre-footer-bottom {
     justify-content: space-between;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .centre-footer {
+        width: 90%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #container-footer-left, #container-footer-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #container-footer-left {
+        padding-left: 7em;
+        margin-top: 3em;
+    }
+}

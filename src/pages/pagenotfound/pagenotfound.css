@@ -40,10 +40,6 @@
     transition: transform 1s;
 }
 
-#back-to-home a {
-    box-shadow: 0 4px 10px -5px  white;
-}
-
 #back-to-home:hover {
     transform: scale(1.2);
 }

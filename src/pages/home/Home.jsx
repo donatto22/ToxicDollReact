@@ -1,10 +1,8 @@
 import './home.css'
 import Typed from 'react-typed'
-import { BasicOperations } from 'ax-calculator'
 import Calculator from './calculator/Calculator'
 
 const App = () => {
-	const a = BasicOperations.sum(0.3, 0.2).result
 	return (
 		<>
 			<div className="main-header">

@@ -8,6 +8,7 @@ import Dollyloli from '../bots/Dollyloli'
 import AssignmentTurnedInOutlinedIcon from '@mui/icons-material/AssignmentTurnedInOutlined'
 import AttachFileOutlinedIcon from '@mui/icons-material/AttachFileOutlined'
 import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined'
+import { Clock } from 'ax-calculator'
 
 const Footer = () => {
     const [dolly, setDolly] = useState(false)
@@ -46,7 +47,7 @@ const Footer = () => {
 
                             <div className="footer-link">
                                 <Link to='/afiliar'>Afiliar</Link>
-                                <Link to='/calculadora'>Calculadora del Bot</Link>
+                                <a href='https://donatto22.github.io/ax-calculator/'>Calculadora</a>
                                 <a href="#">Código fuente</a>
                                 <Link to='/comandos'>Comandos</Link>
                             </div>
@@ -76,7 +77,7 @@ const Footer = () => {
                     </div>
 
                     <div id="cente-footer-right">
-                        Con amor para ti, por !Marenol &mdash; &copy; 2022
+                        Con amor para ti, por !Marenol &mdash; &copy; { new Date().getFullYear() }
                     </div>
                 </div>
             </div>
