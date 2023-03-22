@@ -2,36 +2,76 @@ a {
     color: white;
 }
 
-.menu {
-    width: 45%;
-    position: sticky;
-    z-index: 5;
-    top: 1em;
-    margin-top: -4.70em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em 2em;
-    border-radius: 50px;
-    background-color: #263040;
-    box-shadow: 0px 6px 6px #1d2430;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 #menu-icon {
     width: 40px;
     border-radius: 50%;
     border: 2px solid white;
 }
 
+.menu {
+    position: fixed;
+    z-index: 10;
+}
+
+/* Contenedor del icono hamburguesa y logo */
+.menu-left {
+    width: 120px;
+    border-radius: 40px;
+    padding: 1em 1.8em;
+    margin: 1em 0 1em 1.4em;
+    background-color: var(--firebase-dark-navy-blue);
+    box-shadow: 0 6px 6px #1d2430;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* icono de hamburguesa */
+.menu-left svg {
+    transform: scale(1.4);
+    color: var(--default-shadow-gray);
+    cursor: pointer;
+}
+
+/* Estilos del menú oculto */
+.menu-right {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    position: absolute;
+    width: 200px;
+    left: -220px;
+    transition: left .1s;
+
+    /* Glasmorphism */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    outline: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* Cuando se le dio click al menu */
+.menu-right-active {
+    left: 14px;
+}
+
+/* Enlaces */
 .menu-right a {
-    padding: 4px 0;
-    transition: box-shadow .2s;
+    padding: 8px 0;
+    margin-left: 2em;
+    display: flex;
+    align-items: center;
+}
+
+/* Margen al icono */
+.menu-right a svg {
+    margin-right: 6px;
 }
 
 .menu-right a:not(:last-child) {
-    margin-right: 1.4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .menu-right a:hover {

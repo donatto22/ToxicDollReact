@@ -15,8 +15,7 @@ const OutletManager = () => {
 
     return (
         <>
-        {
-        loading 
+        { loading 
         ? (<p>cargando</p>) 
         : (
                 <>
