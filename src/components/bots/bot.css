@@ -136,6 +136,17 @@
     top: 30%;
 }
 
+/* Tablet */
+@media (max-width: 768px) {
+    #exit {
+        transform: scale(1.6);
+        cursor: pointer;
+        position: absolute;
+        right: 15%;
+        top: 25%;
+    }
+}
+
 #profile-image {
     width: 90%;
     border-radius: 50%;

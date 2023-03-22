@@ -12,6 +12,7 @@ import PageNotFound from './pages/pagenotfound/PageNotFound'
 import OutletManager from './Outlet'
 import Tos from './pages/tos/Tos'
 import Privacy from './pages/privacy/Privacy'
+import Faq from './pages/faq/Faq'
 
 /* eslint-disable no-tabs */
 createRoot(document.getElementById('root')).render(
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
 				<Route path='/afiliar' element={<Afiliate />} />
 				<Route path='/tos' element={<Tos />} />
 				<Route path='/privacidad' element={<Privacy />} />
+				<Route path='/faq' element={<Faq />} />
 			</Route>
 			<Route path='*' element={<PageNotFound />} />
 		</Routes>

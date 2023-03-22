@@ -44,19 +44,19 @@ const Integration = ({ title, links, images }) => {
                 >
                     <SwiperSlide>
                         <div className="img-slider">
-                            <img src="./avatar.jpg" alt="" />
+                            <img src="./avatar.webp" alt="" />
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                         <div className="img-slider">
-                            <img src="./avatar.jpg" alt="" />
+                            <img src="./avatar.webp" alt="" />
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                         <div className="img-slider">
-                            <img src="./avatar.jpg" alt="" />
+                            <img src="./avatar.webp" alt="" />
                         </div>
                     </SwiperSlide>
                 </Swiper>
