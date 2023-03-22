@@ -15,7 +15,7 @@ const OutletManager = () => {
 
     return (
         <>
-        { loading 
+        {/* { loading 
         ? (<p>cargando</p>) 
         : (
                 <>
@@ -24,7 +24,11 @@ const OutletManager = () => {
                 <Footer/>
                 </>
             )
-        }
+        } */}
+
+        <Menu/>
+        <Outlet/>
+        <Footer/>
         
         </>
     )

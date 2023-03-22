@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 import CableIcon from '@mui/icons-material/Cable'
 import CodeIcon from '@mui/icons-material/Code'
+import HelpIcon from '@mui/icons-material/Help'
 
 const Menu = () => {
     const [active, setActive] = useState(false)
@@ -13,7 +14,7 @@ const Menu = () => {
         <nav className="menu">
             <div className="menu-left">
                 <NavLink to='/'>
-                    <img id='menu-icon' src='./avatar.webp' alt="Logo Bot" />
+                    <img loading='lazy' id='menu-icon' src='./avatar.webp' alt="Logo Bot" />
                 </NavLink>
                 <MenuOutlinedIcon onClick={(() => setActive(!active))}/> 
             </div>
@@ -21,6 +22,7 @@ const Menu = () => {
             <div className={active ? 'menu-right menu-right-active' : 'menu-right'}>
                 <NavLink onClick={(() => setActive(!active))} to='/integraciones'><CableIcon/> Integraciones</NavLink>
                 <NavLink onClick={(() => setActive(!active))} to='/comandos'> <CodeIcon/> Comandos</NavLink>
+                <NavLink onClick={(() => setActive(!active))} to='/faq'> <HelpIcon/> Preguntas</NavLink>
             </div>
         </nav>
     )

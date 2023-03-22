@@ -10,8 +10,8 @@ const Calculator = () => {
                 </div>
 
                 <div id="calculator-right">
-                    <img id="bgmath" src="./mathbg.webp" alt="mathbg" />
-                    <img id="logoax" src="./logo.webp" alt="logo calculator" />
+                    <img loading='lazy' id="bgmath" src="./mathbg.webp" alt="mathbg" />
+                    <img loading='lazy' id="logoax" src="./logo.webp" alt="logo calculator" />
                 </div>
             </div>
         </div>

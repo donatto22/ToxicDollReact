@@ -49,6 +49,8 @@ a {
     backdrop-filter: blur(20px);
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
     outline: 1px solid rgba(255, 255, 255, 0.14);
+
+    padding: 1.4em 0;
 }
 
 /* Cuando se le dio click al menu */
@@ -68,9 +70,7 @@ a {
 .menu-right a svg {
     margin-right: 6px;
 }
-
 .menu-right a:not(:last-child) {
-    margin-top: 1em;
     margin-bottom: 1em;
 }
 

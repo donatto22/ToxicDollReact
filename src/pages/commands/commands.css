@@ -1,7 +1,7 @@
 /* Div con la imagen que será
 resaltada poor el texto */
 #text-container {
-    background-image: url('../../images/anime-room-tools.jpg');
+    background-image: url('../../images/anime-room-tools.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,7 +9,6 @@ resaltada poor el texto */
 
 /* Div que contiene el el texto de entrada */
 #text-commands {
-    padding-top: 1em;
     height: 40vh;
     font-weight: bold;
     letter-spacing: 2px;
