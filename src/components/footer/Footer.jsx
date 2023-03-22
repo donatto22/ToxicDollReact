@@ -8,7 +8,6 @@ import Dollyloli from '../bots/Dollyloli'
 import AssignmentTurnedInOutlinedIcon from '@mui/icons-material/AssignmentTurnedInOutlined'
 import AttachFileOutlinedIcon from '@mui/icons-material/AttachFileOutlined'
 import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined'
-import { Clock } from 'ax-calculator'
 
 const Footer = () => {
     const [dolly, setDolly] = useState(false)

@@ -2,12 +2,12 @@
     {
         "name": "Anime",
         "links": ["waifu.pics", "waifu.im"],
-        "pictures": ["avatar.jpg", "avatar.jpg", "avatar.jpg"]
+        "pictures": ["avatar.webp", "avatar.webp", "avatar.webp"]
     },
 
     {
         "name": "Imágenes",
         "links": ["pexels.com", "unsplash.com"],
-        "pictures": ["avatar.jpg", "avatar.jpg", "avatar.jpg"]
+        "pictures": ["avatar.webp", "avatar.webp", "avatar.webp"]
     }
 ]

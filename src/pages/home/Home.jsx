@@ -8,7 +8,7 @@ const App = () => {
 			<div className="main-header">
 				<div id="centre-header">
 					<div id="avatar-bot">
-						<img src='./avatar.jpg' alt="avatar bot" />
+						<img src='./avatar.webp' alt="avatar bot" />
 					</div>
 
 					<div id="typed-text">

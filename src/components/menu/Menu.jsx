@@ -6,7 +6,7 @@ const Menu = () => {
         <nav className="menu">
             <div className="menu-left">
                 <NavLink to='/'>
-                    <img id='menu-icon' src='./avatar.jpg' alt="Logo Bot" />
+                    <img id='menu-icon' src='./avatar.webp' alt="Logo Bot" />
                 </NavLink>
             </div>
 
