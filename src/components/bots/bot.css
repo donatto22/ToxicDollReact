@@ -60,10 +60,13 @@
 
 .tag {
     font-size: 16px;
-    background-color: var(--firebase-dark-navy-blue);
     border-radius: 4px;
     padding: 6px 10px;
     user-select: none;
+
+    /* glasmorphism */
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(6px);
 }
 
 .tag:not(:last-child) {

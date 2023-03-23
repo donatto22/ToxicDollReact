@@ -9,6 +9,8 @@ import AssignmentTurnedInOutlinedIcon from '@mui/icons-material/AssignmentTurned
 import AttachFileOutlinedIcon from '@mui/icons-material/AttachFileOutlined'
 import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined'
 
+import config from '../../../config.json'
+
 const Footer = () => {
     const [dolly, setDolly] = useState(false)
     const [dollyloli, setDollyloli] = useState(false)
@@ -63,8 +65,8 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        { dolly && createPortal(<Dolly state={'Apagado'} exit={() => setDolly(!dolly)}/>, document.querySelector('#botPortal')) }
-                        { dollyloli && createPortal(<Dollyloli state={'Apagado'} exit={() => setDollyloli(!dollyloli)}/>, document.querySelector('#botPortal')) }
+                        { dolly && createPortal(<Dolly state={'Apagado'} inviteLink={config.link_dolly} exit={() => setDolly(!dolly)}/>, document.querySelector('#botPortal')) }
+                        { dollyloli && createPortal(<Dollyloli state={'Apagado'} inviteLink={config.link_dollyloli} exit={() => setDollyloli(!dollyloli)}/>, document.querySelector('#botPortal')) }
                     </div>
                 </div>
             </div>

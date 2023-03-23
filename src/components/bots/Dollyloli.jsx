@@ -36,7 +36,7 @@ const Dollyloli = ({ state, exit, inviteLink }) => {
                     </div>
 
                     <div id="button-invite">
-                        <a href={inviteLink}>Agregar al Servidor</a>
+                        <a href={inviteLink} target='_blank'>Agregar al Servidor</a>
                     </div>
                 </div>
             </div>
