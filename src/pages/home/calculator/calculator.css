@@ -7,12 +7,18 @@
     border-radius: 10px;
     box-shadow: 0 40px 80px #1d2430;
     overflow: hidden;
+
+    /* Glasmorphism */
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    outline: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 #calculator-flex {
     display: flex;
     align-items: center;
     height: 100%;
+    backdrop-filter: blur(4px);
 }
 
 /* Pequeño aviso */
@@ -26,6 +32,7 @@
     padding: 1.4em 2em;
     width: 20%;
     transform: translate(-3em, -50%);
+    z-index: 1;
 }
 
 /* Contenido del anuncio calculadora */
