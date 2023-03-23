@@ -163,6 +163,7 @@ pre::before, pre::after {
     position: fixed;
     z-index: -5;
     width: 100vw;
+    height: auto;
 }
 
 /* Scroll */

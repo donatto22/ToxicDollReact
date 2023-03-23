@@ -16,14 +16,17 @@
     /* min-width: 600px;
     min-height: 300px; */
     padding: 0 2em;
-    background-color: var(--firebase-navy-blue);
-    box-shadow: 0 0 100px -20px var(--paypal), 0 0 400px var(--paypal-dark);
     border-radius: 10px;
     z-index: 2;
     max-width: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 #bot > div {
@@ -132,8 +135,7 @@
     transform: scale(1.6);
     cursor: pointer;
     position: absolute;
-    right: 33%;
-    top: 30%;
+    top: -4em;
 }
 
 /* Tablet */
