@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "question": "El Bot es seguro?",
+        "answer": "El creador del Bot verifica el estado del bot a diario, además, los mismos usuarios pueden enviar una retroalimentación con respecto al uso del bot, errores u otras funcionalidades que les gustaría en el futuro. Siempre se está mejorando tanto en características como funcionalidad."
+    },
+
+    {
+        "id": 2,
+        "question": "El Bot es premium?",
+        "answer": "Todas las funcionalidades que ofrece el Bot son **totalmente libres**, el objetivo principal es ofrecer lo que para otros Bots es de paga. Los usuarios envían reportes para mantener las funciones sin  problemas."
+    },
+
+    {
+        "id": 3,
+        "question": "Las donaciones son libres?",
+        "answer": "Totalmente, las donaciones son muy apreciadas y nos da a entender que les gusta los objetivos del bot como lo que ofrece."
+    },
+
+    {
+        "id": 4,
+        "question": "Puedo usar la calculadora sin el bot?",
+        "answer": "Actualmente la calculadora es de uso en programación, es decir, otros creadores de Bots o aplicaciones pueden usarla dentro como una herramienta. Se tiene planeado crear una interfaz web y una versión descargable para su uso comercial en un futuro."
+    }
+]

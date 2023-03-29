@@ -15,6 +15,8 @@ const Footer = () => {
     const [dolly, setDolly] = useState(false)
     const [dollyloli, setDollyloli] = useState(false)
 
+    const handleTop = () => { window.scrollTo({ top: 0 }) }
+
     return (
         // Contenedor general
         <div id="footer">
@@ -35,7 +37,7 @@ const Footer = () => {
                             </div>
 
                             <div className="footer-link">
-                                <Link to='/tos'>Términos y Condiciones</Link>
+                                <Link to='/tos' onClick={handleTop}>Términos y Condiciones</Link>
                                 <Link to='/privacidad'>Política de Privacidad</Link>
                                 <Link to='/apoyar'>Apoyar</Link>
                             </div>
@@ -47,10 +49,10 @@ const Footer = () => {
                             </div>
 
                             <div className="footer-link">
-                                <Link to='/afiliar'>Afiliar</Link>
+                                <Link to='/afiliar' onClick={handleTop}>Afiliar</Link>
                                 <a href='https://donatto22.github.io/ax-calculator/'>Calculadora</a>
                                 <a href="#">Código fuente</a>
-                                <Link to='/comandos'>Comandos</Link>
+                                <Link to='/comandos' onClick={handleTop}>Comandos</Link>
                             </div>
                         </div>
 

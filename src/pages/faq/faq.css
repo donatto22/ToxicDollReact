@@ -1,0 +1,57 @@
+/* Contenedor de las preguntas */
+#preguntas {
+    width: 50%;
+    margin: 3.5em auto;
+}
+
+/* La pregunta en sí */
+.contenedor-pregunta:not(:last-child) {
+    margin-bottom: 1.4em;
+}
+
+/* Título de la pregunta */
+.pregunta {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    padding: 1em 2em;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: var(--firebase-dark-navy-blue);
+    color: var(--shadow-clear);
+    box-shadow: inset 2px -2px 8px #181e28, inset -2px 2px 8px #2c384a;
+}
+
+/* Icono de la pregunta */
+.pregunta svg {
+    transform: scale(1.1);
+}
+
+/* En caso que la pregunta fue seleccionada / click */
+.pregunta[aria-expanded='true'] {
+    color: var(--bootstrap-skyblue);
+    box-shadow: none;
+}
+
+/* icono dentr del titulo */
+.pregunta[aria-expanded='true'] svg {
+    rotate: 90deg;
+}
+
+/* Respuesta de cada pregunta */
+.respuesta {
+    color: var(--shadow-clear);
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 2;
+    padding: 14px 2em;
+    text-align: justify;
+
+    /* Glasmorphism */
+    background-color: rgba(34, 43, 57, 0.6);
+    border-radius: 0 0 10px 10px;
+    backdrop-filter: blur(2px);
+}
