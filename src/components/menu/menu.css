@@ -84,3 +84,11 @@ a {
         width: 80%;
     }
 }
+
+/* Icono locker g */
+#lglogo {
+    position: absolute;
+    left: 200px;
+    width: 70px;
+    filter: drop-shadow(4px 4px 2px black);
+}

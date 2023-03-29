@@ -17,6 +17,7 @@ const Menu = () => {
                     <img loading='lazy' id='menu-icon' src='./avatar.webp' alt="Logo Bot" />
                 </NavLink>
                 <MenuOutlinedIcon onClick={(() => setActive(!active))}/> 
+                <img loading='lazy' id='lglogo' src='./lockerglogo.webp' alt='lockerg logo' />
             </div>
 
             <div className={active ? 'menu-right menu-right-active' : 'menu-right'}>
