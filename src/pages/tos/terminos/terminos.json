@@ -1,0 +1,37 @@
+[
+    {
+        "termid": 1,
+        "title": "No SPAM de comandos",
+        "description": "El usuario que provoque caer el Bot mediante la ejecución consecutiva de uno o múltiples comandos a la vez será acreedor de una sanción."
+    },
+
+    {
+        "termid": 2,
+        "title": "No clonar el servidor oficial",
+        "description": "Este acto está terminalmente prohibido, el usuario que llevó en proceso la acción será incluido en la lista negra permanentemente."
+    },
+
+    {
+        "termid": 3,
+        "title": "Discriminación e Intolerancia",
+        "description": "No se permiten actos de Racismo, Sexismo, Homofobia, Xenofobia o insultos. Si eres un víctima de estas actitudes por otro usuario, reportalo directamente con un moderador, administrador, creador del Bot o envía un reporte a través del comando botabuse."
+    },
+
+    {
+        "termid": 4,
+        "title": "Uso de Macros y Scripts",
+        "description": "Los usuarios que intenten usar algún método para robar datos, alterar comandos del Bot, cambiar estructura de datos internos o crear un Bot con el propósito de atacar serán incluidos permanentemente en la lista negra, además de mantener esta lista abierta a otros creadores de Bot para mantenerlos informados y protegidos de estos usuarios."
+    },
+
+    {
+        "termid": 5,
+        "title": "Blasmefias del Servidor",
+        "description": "Crear historias falsas acerca del Bot o Servidor ofrecido terminará en sanción temporal. Los usuarios que inicien una grupos con este mismo propósito serán incluidos en la lista negra."
+    },
+
+    {
+        "termid": 6,
+        "title": "Errores del Bot",
+        "description": "Aprovechar de vulnerabilidades en el Bot está prohibido y será incluido inmediatamente en la lista negra. Sin embargo, los usuarios que ayuden con la creación del Bot enviando reportes de fallos con el comando bugreport, informando a un moderador o enviando un mensaje directo al Creador del Bot será acreedor de un rol especial que permitirá probar caracteristicas futuras, además, todos los usuarios con este rol podrán participar de eventos exclusivos donde se brindarán recompensas. Estos eventos serán incluidos en un futuro cercano."
+    }
+]

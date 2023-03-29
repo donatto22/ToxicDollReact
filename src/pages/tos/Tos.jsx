@@ -1,3 +1,4 @@
+import Terminos from './terminos/Terminos'
 import './tos.css'
 
 const Tos = () => {
@@ -9,35 +10,7 @@ const Tos = () => {
                 </div>
 
                 <div id="description-tos">
-                    <div className="termino">
-                        <div className="encabezado">
-                            Privacidad
-                        </div>
-
-                        <div className="descripcion">
-
-                        </div>
-                    </div>
-
-                    <div className="termino">
-                        <div className="encabezado">
-
-                        </div>
-
-                        <div className="descripcion">
-                            
-                        </div>
-                    </div>
-
-                    <div className="termino">
-                        <div className="encabezado">
-
-                        </div>
-
-                        <div className="descripcion">
-                            
-                        </div>
-                    </div>
+                    <Terminos/>
                 </div>
             </div>
         </div>

@@ -1,37 +1,45 @@
-:root {
-    --border: 20px
-}
 
 #container-tos {
-    display: flex;
-    justify-content: center;
-    margin: 9em 0;
+    margin: 8em auto 4em;
     font-size: 18px;
+    width: 70%;
+    padding: 0 1em;
+    display: flex;
+    background-color: var(--firebase-dark-navy-blue);
+    border-radius: 20px;
 }
 
 /* Contenedor centrado */
 #tos {
-    width: 80%;
-    background-color: var(--paypal-dark);
+    width: 90%;
+    margin: 3em auto;
     border-radius: var(--border);
-    box-shadow: 0 0 400px var(--bootstrap-bg-dark);
 }
 
 /* Título */
 #title-tos {
-    height: 200px;
-    background-color: var(--paypal-dark);
-    border-top-left-radius: var(--border);
-    border-top-right-radius: var(--border);
     display: flex;
     align-items: flex-end;
-    font-size: 40px;
+    font-size: 30px;
+    color: var(--bootstrap-skyblue);
+    margin-bottom: 1em;
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--firebase-navy-blue);
 }
 
-#title-tos div {
-    margin: .6em;
+/* Terminos */
+.encabezado {
+    color: var(--bootstrap-bg-info);
+    font-size: 24px;
+    margin-bottom: 16px;
 }
 
-#description-tos {
-    background-color: red;
+.descripcion {
+    color: var(--shadow-clear);
+    line-height: 2.4;
+    text-align: justify;
+}
+
+.termino:not(:last-child) {
+    margin-bottom: 2em;
 }
